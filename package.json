@@ -1,0 +1,11 @@
+{
+  "name": "DITAStyleSheets",
+  "version": "1.0.0",
+  "description": "OxygenXML template using the NHS Design System",
+  "repository": "https://github.com/NHSDigital/DITAStyleSheets.git",
+  "author": "Nicholas Oughtibridge",
+  "license": "MIT",
+  "dependencies": {
+    "nhsuk-frontend": "^3.0.4"
+  }
+}
