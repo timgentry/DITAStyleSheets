@@ -6,6 +6,7 @@
   "author": "Nicholas Oughtibridge",
   "license": "MIT",
   "dependencies": {
-    "nhsuk-frontend": "^3.0.4"
+    "nhsuk-frontend": "^3.0.4",
+    "sass": "^1.26.3"
   }
 }
