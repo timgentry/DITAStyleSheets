@@ -1,4 +1,3 @@
-@charset "utf-8";
 /*  Nicholas' customisation for Data Dictionary */
 /* Declare colours and charactaristics */
 /*  for backgrounds */
@@ -13,25 +12,29 @@ body {
   background: #f0f4f5;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 /*  Set the defailt colour for links to NHS blue */
 a {
   color: #005eb8;
 }
+
 .ISOcert {
   float: right;
   margin: 30px;
 }
+
 /* Data Dictionary styles */
 .element {
   color: #006747;
   font-weight: bold;
 }
+
 /* 
 .element:before {
-    color:white;
-    background-color: @DarkGreen;
+    color: white;
+    background-color: $DarkGreen;
     content: 'e';
-    border-radius:5px;
+    border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
 }  */
@@ -39,24 +42,28 @@ a {
   color: #330072;
   font-weight: bold;
 }
+
 .class {
-  color: #8a1538;
+  color: #8A1538;
   font-weight: bold;
 }
+
 .dataSet {
-  color: #ed8b00;
+  color: #ED8B00;
   font-weight: bold;
 }
+
 .businessDefinition {
   color: #003087;
   font-weight: bold;
 }
+
 /* 
 .businessDefinition:before {
-    color:white;
-    background-color: @NHSDarkBlue;
+    color: white;
+    background-color: $NHSDarkBlue;
     content: 'bd';
-    border-radius:5px;
+    border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -69,6 +76,7 @@ a {
   background-color: #ffffff;
   color: #005eb8;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -80,18 +88,22 @@ a {
   text-transform: none;
   font-size: 28px;
 }
+
 .wh_publication_title > a {
   font-size: 1.5em;
   text-decoration: none;
 }
+
 .wh_publication_title > a:hover {
   color: #ffe8b4;
 }
+
 .wh_logo img {
   width: 73px;
   height: 30px;
   margin: 30px;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -100,43 +112,53 @@ a {
  */
 .wh_top_menu {
   font-size: 1.1em;
-  margin: .4em 0;
+  margin: 0.4em 0;
   color: #005eb8;
 }
+
 .wh_top_menu > a {
   color: #005eb8;
 }
+
 .wh_top_menu > a:hover {
   color: #ffffff;
 }
+
 /* The submenus */
 .wh_top_menu ul ul {
   background: #003087;
   color: white;
 }
+
 .wh_top_menu ul ul > a {
   background: #003087;
   color: #ffffff;
 }
+
 .wh_top_menu ul li a {
   color: #005eb8;
 }
+
 .wh_top_menu ul li a:hover {
   background: #003087;
   color: #ffffff;
 }
+
 .wh_top_menu ul ul li a:hover {
   background: #003087;
   color: #ffffff;
 }
+
 .wh_top_menu ul ul li {
   background: #003087;
   color: #ffffff;
 }
+
 .wh_top_menu ul ul li a {
   background: #003087;
   color: #ffffff;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -146,6 +168,7 @@ a {
 .wh_indexterms_link a span {
   display: none;
 }
+
 @media only screen and (max-width: 767px) {
   .wh_indexterms_link a:before {
     bottom: 0;
@@ -161,13 +184,16 @@ a {
   background-color: #003087;
   color: #ffffff;
 }
+
 .wh_breadcrumb ol a {
   color: #ffffff;
 }
+
 .wh_breadcrumb ol .active {
   background-color: #003087;
   color: #ffe8b4;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -178,6 +204,7 @@ a {
   background-color: #003087;
   margin: 1em 0 2em;
 }
+
 .wh_print_link button,
 .webhelp_expand_collapse_sections,
 .wh_hide_highlight,
@@ -193,6 +220,7 @@ a {
   color: #FFB81C;
   text-decoration: none;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -206,12 +234,14 @@ a {
   border-width: 8px;
   background-color: #ffffff;
 }
+
 .wh_tile_shortdesc {
   margin-top: 0.5em;
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   color: #425563;
 }
+
 .wh_tile_title {
   color: #425563;
   font-family: Arial, Helvetica, sans-serif;
@@ -220,15 +250,19 @@ a {
   text-decoration: none;
   font-weight: bold;
 }
+
 .wh_tile_title a {
   color: #425563;
 }
+
 .wh_tile_shortdesc {
   text-align: left;
 }
+
 .wh_tile_text:after {
   background: linear-gradient(to bottom, rgba(238, 238, 238, 0), #eeeeee 50%);
 }
+
 @media only screen and (max-width: 767px) {
   .wh_tile > div {
     height: auto;
@@ -238,7 +272,7 @@ a {
 You can style some of the tiles in a special way. 
 Example:
 .wh_tiles *[data-id='getting_started']{
-    background-color:gray;
+    background-color: gray;
 }
 */
 /*
@@ -254,27 +288,31 @@ Example:
   padding: 2em;
   border-color: #005eb8;
 }
+
 .wh_welcome:not(:empty) {
   font-size: 1em;
   text-align: left;
   margin: 0 auto;
-  padding: 0 0 .5em 0;
+  padding: 0 0 0.5em 0;
   text-shadow: none;
   color: white;
 }
+
 .wh_search_textfield {
   color: #425563;
   background-color: white;
   border: solid 4px #003087;
   border-radius: 0;
-  padding: 0 .5em;
+  padding: 0 0.5em;
   font-size: 1.2em;
   line-height: 2em;
   height: auto;
 }
+
 .wh_search_textfield:focus {
   border: solid 4px #ffe8b4;
 }
+
 .wh_search_button {
   border: solid 4px #003087;
   border-radius: 0 0 0 0;
@@ -282,17 +320,21 @@ Example:
   background-color: #003087;
   color: #ffffff;
 }
+
 /* Search autocomplete */
 .ui-menu-item {
   font-size: 1.4em;
 }
+
 .ui-menu-item .ui-state-active {
   background-color: #346ec5;
 }
+
 /* Search relative path */
 .searchresult li .relativePath a {
   color: #006621;
 }
+
 /* Search autocomplete icons */
 .search-autocomplete-proposal-type-history a,
 .search-autocomplete-proposal-type-history a:hover,
@@ -302,16 +344,19 @@ Example:
   color: inherit;
   font-size: 0.8em;
 }
+
 .ui-state-active .search-autocomplete-proposal-type-history a,
 .ui-state-active .search-autocomplete-proposal-type-history a:hover,
 .ui-state-active .search-autocomplete-proposal-type-history a:visited,
 .ui-state-active .search-autocomplete-proposal-type-history a:active {
   color: #fff;
 }
+
 /* Active search page */
 #wh-search-pagination > ul > li.active > a {
   background-color: #330072;
 }
+
 .pagination > .active > a,
 .pagination > .active > a:focus,
 .pagination > .active > a:hover,
@@ -320,6 +365,7 @@ Example:
 .pagination > .active > span:hover {
   border-color: #346ec5 !important;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -332,21 +378,26 @@ Example:
   padding: 1.5em 2em;
   line-height: 2em;
 }
+
 .wh_publication_toc .active > .topicref a {
   color: #5185cb;
 }
+
 .wh_publication_toc span,
 .wh_publication_toc a,
 .wh_publication_toc a:visited,
 .wh_publication_toc a:hover {
   color: #7b7a7a;
 }
+
 .wh_publication_toc a:hover {
   text-decoration: underline;
 }
+
 .topictitle3 {
   font-weight: 400;
 }
+
 @media only screen and (max-width: 767px) {
   .wh_publication_toc {
     border-radius: 0;
@@ -368,6 +419,7 @@ Example:
   color: white;
   width: 100%;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -379,6 +431,7 @@ Example:
   color: #000000;
   line-height: 1.7em;
 }
+
 .wh_related_links,
 .wh_child_links,
 .wh_topic_content .related-links {
@@ -386,12 +439,14 @@ Example:
   padding: 1.5em;
   margin-top: 1.5em;
 }
+
 .related-links a,
 .related-links a:visited {
   color: #5185cb;
-  padding-bottom: .3em;
+  padding-bottom: 0.3em;
   display: inline-block;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -401,15 +456,19 @@ Example:
 .searchresult {
   list-style: none;
 }
+
 .searchresult li a {
   color: #346ec5;
 }
+
 .searchresult .shortdesclink {
-  margin: .3em .5em 0 0;
+  margin: 0.3em 0.5em 0 0;
 }
+
 .wh_search_expression {
   font-weight: bold;
 }
+
 /*
  * ------------------------------------------------------------------
  *  
@@ -419,9 +478,11 @@ Example:
 .wh_index_terms span.wh_first_letter {
   color: #346ec5;
 }
+
 .wh_index_terms #indexList {
   padding: 0;
 }
+
 /*
  * ------------------------------------------------------------------
  *  

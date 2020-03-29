@@ -5,6 +5,9 @@
   "repository": "https://github.com/NHSDigital/DITAStyleSheets.git",
   "author": "Nicholas Oughtibridge",
   "license": "MIT",
+  "scripts": {
+    "build": "sass --style=expanded --no-source-map NHSD.scss NHSD.css"
+  },
   "dependencies": {
     "nhsuk-frontend": "^3.0.4",
     "sass": "^1.26.3"

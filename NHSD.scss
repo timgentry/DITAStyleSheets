@@ -1,17 +1,16 @@
-@charset "utf-8";
 /*  Nicholas' customisation for Data Dictionary */
 /* Declare colours and charactaristics */
-@NHSBlue: #005eb8;
-@NHSBlue3: #d4e4f3; /*  for backgrounds */
-@NHSDarkBlue: #003087;
-@DarkGreen: #006747;
-@DarkRed: #8A1538;
-@Purple: #330072;
-@DarkGrey: #425563;
-@NHSGrey4: #dfe2e5;  /*  for backgrounds */
-@NHSOrange: #ED8B00;
-@NHSPink: #AE2573;
-@NHSDBackground: #f0f4f5;
+$NHSBlue: #005eb8;
+$NHSBlue3: #d4e4f3; /*  for backgrounds */
+$NHSDarkBlue: #003087;
+$DarkGreen: #006747;
+$DarkRed: #8A1538;
+$Purple: #330072;
+$DarkGrey: #425563;
+$NHSGrey4: #dfe2e5;  /*  for backgrounds */
+$NHSOrange: #ED8B00;
+$NHSPink: #AE2573;
+$NHSDBackground: #f0f4f5;
 /*  Fonts */
 /* Tiles */
 /* Page colours */
@@ -19,59 +18,58 @@
 /* Search Bar */
 /* Breadcrumbs */
 
-
 body {
-  background: @NHSDBackground;
+  background: $NHSDBackground;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 /*  Set the defailt colour for links to NHS blue */
 a {
-    color: @NHSBlue;
+    color: $NHSBlue;
 }
 .ISOcert {
     float: right;
-    margin:30px;
+    margin: 30px;
 }
 
 /* Data Dictionary styles */
 .element {
-    color:@DarkGreen;
-    font-weight:bold;
+    color: $DarkGreen;
+    font-weight: bold;
 }
 /* 
 .element:before {
-    color:white;
-    background-color: @DarkGreen;
+    color: white;
+    background-color: $DarkGreen;
     content: 'e';
-    border-radius:5px;
+    border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
 }  */
 .attribute {
-    color:@Purple;
-    font-weight:bold;
+    color: $Purple;
+    font-weight: bold;
 }
 .class {
-    color:@DarkRed;
-    font-weight:bold;
+    color: $DarkRed;
+    font-weight: bold;
 }
 
 .dataSet {
-        color:@NHSOrange;
-    font-weight:bold;
+        color: $NHSOrange;
+    font-weight: bold;
 }
 
 .businessDefinition {
-    color:@NHSDarkBlue;
-    font-weight:bold;
+    color: $NHSDarkBlue;
+    font-weight: bold;
 }
 /* 
 .businessDefinition:before {
-    color:white;
-    background-color: @NHSDarkBlue;
+    color: white;
+    background-color: $NHSDarkBlue;
     content: 'bd';
-    border-radius:5px;
+    border-radius: 5px;
     padding-left: 3px;
     padding-right: 3px;
 }
@@ -85,7 +83,7 @@ a {
  */
 .wh_header {
   background-color: #ffffff;
-  color: @NHSBlue;
+  color: $NHSBlue;
 }
 /*
  * ------------------------------------------------------------------
@@ -121,40 +119,40 @@ a {
 .wh_top_menu {
   font-size: 1.1em;
   margin: .4em 0;
-  color: @NHSBlue;
+  color: $NHSBlue;
 }
 .wh_top_menu > a {
-  color: @NHSBlue;
+  color: $NHSBlue;
 }
 .wh_top_menu > a:hover {
   color: #ffffff;
 }
 /* The submenus */
 .wh_top_menu ul ul {
-  background: @NHSDarkBlue;
+  background: $NHSDarkBlue;
   color: white;
 }
 .wh_top_menu ul ul > a {
-  background: @NHSDarkBlue;
+  background: $NHSDarkBlue;
   color: #ffffff;
 }
 .wh_top_menu ul li a {
-  color: @NHSBlue;
+  color: $NHSBlue;
 }
 .wh_top_menu ul li a:hover {
-  background: @NHSDarkBlue;
+  background: $NHSDarkBlue;
   color: #ffffff;
 }
 .wh_top_menu ul ul li a:hover {
-  background: @NHSDarkBlue;
+  background: $NHSDarkBlue;
   color: #ffffff;
 }
 .wh_top_menu ul ul li {
-  background: @NHSDarkBlue;
+  background: $NHSDarkBlue;
   color: #ffffff;
 }
 .wh_top_menu ul ul li a {
-  background: @NHSDarkBlue;
+  background: $NHSDarkBlue;
   color: #ffffff;
 }
 /*
@@ -178,14 +176,14 @@ a {
  *  
  */
 .wh_breadcrumb ol {
-  background-color: @NHSDarkBlue;
+  background-color: $NHSDarkBlue;
   color: #ffffff;
 }
 .wh_breadcrumb ol a {
   color: #ffffff;
 }
 .wh_breadcrumb ol .active {
-  background-color: @NHSDarkBlue;
+  background-color: $NHSDarkBlue;
   color: #ffe8b4;
 }
 /*
@@ -195,7 +193,7 @@ a {
  * 
  */
 .wh_tools {
-  background-color: @NHSDarkBlue;
+  background-color: $NHSDarkBlue;
   margin: 1em 0 2em;
 }
 .wh_print_link button,
@@ -221,7 +219,7 @@ a {
  */
 .wh_tile {
   border-radius: 0em;
-  border-color: @NHSBlue;
+  border-color: $NHSBlue;
   border-style: solid;
   border-width: 8px;
   background-color: #ffffff;
@@ -258,7 +256,7 @@ a {
 You can style some of the tiles in a special way. 
 Example:
 .wh_tiles *[data-id='getting_started']{
-    background-color:gray;
+    background-color: gray;
 }
 */
 /*
@@ -268,11 +266,11 @@ Example:
  * 
  */
 .wh_search_input {
-  background-color: @NHSBlue;
+  background-color: $NHSBlue;
   color: white;
   margin: 0 0;
   padding: 2em;
-  border-color: @NHSBlue;
+  border-color: $NHSBlue;
 }
 .wh_welcome:not(:empty) {
   font-size: 1em;
@@ -285,7 +283,7 @@ Example:
 .wh_search_textfield {
   color: #425563;
   background-color: white;
-  border: solid 4px @NHSDarkBlue;
+  border: solid 4px $NHSDarkBlue;
   border-radius: 0;
   padding: 0 .5em;
   font-size: 1.2em;
@@ -296,10 +294,10 @@ Example:
   border: solid 4px #ffe8b4;
 }
 .wh_search_button {
-  border: solid 4px @NHSDarkBlue;
+  border: solid 4px $NHSDarkBlue;
   border-radius: 0 0 0 0;
   padding: 0.5em 1em;
-  background-color: @NHSDarkBlue;
+  background-color: $NHSDarkBlue;
   color: #ffffff;
 }
 /* Search autocomplete */
