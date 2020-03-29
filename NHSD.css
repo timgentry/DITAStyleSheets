@@ -8,16 +8,6 @@
 /* Main Header Bar */
 /* Search Bar */
 /* Breadcrumbs */
-body {
-  background: #f0f4f5;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-/*  Set the defailt colour for links to NHS blue */
-a {
-  color: #005eb8;
-}
-
 .ISOcert {
   float: right;
   margin: 30px;
@@ -69,14 +59,6 @@ a {
 }
  */
 /*  Oxygen styles */
-/* Title and logo bar
- * 
- */
-.wh_header {
-  background-color: #ffffff;
-  color: #005eb8;
-}
-
 /*
  * ------------------------------------------------------------------
  *  
@@ -96,12 +78,6 @@ a {
 
 .wh_publication_title > a:hover {
   color: #ffe8b4;
-}
-
-.wh_logo img {
-  width: 73px;
-  height: 30px;
-  margin: 30px;
 }
 
 /*
