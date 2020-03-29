@@ -23,9 +23,9 @@
         
         <whc:include_html href="${webhelp.fragment.header}"/>
         
+        <div class="nhsuk-width-container">
         <whc:webhelp_search_input/>
         
-        <div class="container-fluid" id="wh_topic_container">
             <div class="row">
 
                 <nav class="wh_tools d-print-none navbar-expand-md">
@@ -58,13 +58,13 @@
                         </nav>
                     </whc:webhelp_publication_toc>
                     
-                    <div id="wh_topic_body" class="col-lg-7 col-md-9 col-sm-12">
+                    <main id="wh_topic_body" class="nhsuk-main-wrapper">
                         <whc:webhelp_topic_content class="body"/>
                         <whc:webhelp_child_links/>
                         <whc:webhelp_related_links/>
                         <whc:webhelp_feedback/>
                         <whc:include_html href="${webhelp.fragment.feedback}"/>
-                    </div>
+                    </main>
                     <whc:webhelp_topic_toc>
                         <nav role="navigation"  id="wh_topic_toc" 
                             class="col-lg-2 d-none d-lg-block navbar d-print-none"> 

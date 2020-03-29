@@ -29,13 +29,15 @@
         
         <whc:include_html href="${webhelp.fragment.header}"/>
         
+        <div class="nhsuk-width-container">
         <!-- Search form -->
         <whc:webhelp_search_input class="navbar-form search" role="form"/>
-        <div class="container-fluid wh_content_area" id="results">
+        <main class="nhsuk-main-wrapper" id="results">
             <div class="row">
                 <whc:webhelp_search_results class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="searchResults"/>
                 <div id="wh-search-pagination" class="wh-search-pagination col-xs-12 col-sm-12 col-md-12 col-lg-12"></div>
             </div>
+        </main>
         </div>
         
         <whc:include_html href="footer.xml"/>
