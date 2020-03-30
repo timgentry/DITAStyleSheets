@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="oxygen-webhelp/template/resources/css/nhsuk-3.0.4.min.css" />
+    <whc:webhelp_skin_resources />
 
     <!-- Scripts -->
     <script src="oxygen-webhelp/template/resources/js/nhsuk-3.0.4.min.js" defer="defer"></script>
@@ -22,8 +22,6 @@
     <meta name="msapplication-wide310x150logo" content="oxygen-webhelp/template/resources/assets/favicons/widetile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="oxygen-webhelp/template/resources/assets/favicons/largetile-310x310.png" />
 
-    <!-- Skin resources -->
-    <whc:webhelp_skin_resources />
     <!-- EXM-36950 - Expand the args.hdf parameter here -->
     <whc:include_html href="${args.hdf}" />
 </html>
