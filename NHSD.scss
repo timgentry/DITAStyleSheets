@@ -1,16 +1,11 @@
+@import '_nhsuk-frontend_shim';
+
 /*  Nicholas' customisation for Data Dictionary */
 /* Declare colours and charactaristics */
-$NHSBlue: #005eb8;
-$NHSBlue3: #d4e4f3; /*  for backgrounds */
-$NHSDarkBlue: #003087;
+$NHSDarkBlue: $color_shade_nhsuk-blue-50;
 $DarkGreen: #006747;
 $DarkRed: #8A1538;
-$Purple: #330072;
-$DarkGrey: #425563;
-$NHSGrey4: #dfe2e5;  /*  for backgrounds */
 $NHSOrange: #ED8B00;
-$NHSPink: #AE2573;
-$NHSDBackground: #f0f4f5;
 /*  Fonts */
 /* Tiles */
 /* Page colours */
@@ -38,7 +33,7 @@ $NHSDBackground: #f0f4f5;
     padding-right: 3px;
 }  */
 .attribute {
-    color: $Purple;
+    color: $color_nhsuk-purple;
     font-weight: bold;
 }
 .class {
@@ -98,10 +93,10 @@ $NHSDBackground: #f0f4f5;
 .wh_top_menu {
   font-size: 1.1em;
   margin: .4em 0;
-  color: $NHSBlue;
+  color: $color_nhsuk-blue;
 }
 .wh_top_menu > a {
-  color: $NHSBlue;
+  color: $color_nhsuk-blue;
 }
 .wh_top_menu > a:hover {
   color: #ffffff;
@@ -116,7 +111,7 @@ $NHSDBackground: #f0f4f5;
   color: #ffffff;
 }
 .wh_top_menu ul li a {
-  color: $NHSBlue;
+  color: $color_nhsuk-blue;
 }
 .wh_top_menu ul li a:hover {
   background: $NHSDarkBlue;
@@ -154,12 +149,20 @@ $NHSDBackground: #f0f4f5;
  * Breadcrumb
  *  
  */
-.wh_breadcrumb ol {
-  background-color: $NHSDarkBlue;
-  color: #ffffff;
-}
-.wh_breadcrumb ol a {
-  color: #ffffff;
+.wh_breadcrumb {
+  @extend .nhsuk-width-container;
+
+  ol {
+    @extend .nhsuk-breadcrumb__list;
+
+    li {
+      @extend .nhsuk-breadcrumb__item;
+
+      a {
+        @extend .nhsuk-breadcrumb__link;
+      }
+    }
+  }
 }
 .wh_breadcrumb ol .active {
   background-color: $NHSDarkBlue;
@@ -171,10 +174,10 @@ $NHSDBackground: #f0f4f5;
  * Tools and navigation
  * 
  */
-.wh_tools {
-  background-color: $NHSDarkBlue;
-  margin: 1em 0 2em;
-}
+//.wh_tools {
+//  background-color: $NHSDarkBlue;
+//  margin: 1em 0 2em;
+//}
 .wh_print_link button,
 .webhelp_expand_collapse_sections,
 .wh_hide_highlight,
@@ -198,7 +201,7 @@ $NHSDBackground: #f0f4f5;
  */
 .wh_tile {
   border-radius: 0em;
-  border-color: $NHSBlue;
+  border-color: $color_nhsuk-blue;
   border-style: solid;
   border-width: 8px;
   background-color: #ffffff;
@@ -245,11 +248,11 @@ Example:
  * 
  */
 .wh_search_input {
-  background-color: $NHSBlue;
+  background-color: $color_nhsuk-blue;
   color: white;
   margin: 0 0;
   padding: 2em;
-  border-color: $NHSBlue;
+  border-color: $color_nhsuk-blue;
 }
 .wh_welcome:not(:empty) {
   font-size: 1em;
