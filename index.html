@@ -48,7 +48,7 @@
         
 <header class="nhsuk-header" role="banner">
   <div class="nhsuk-width-container nhsuk-header__container">
-    <div class="nhsuk-header__logo nhsuk-header__logo--only"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS data dictionary homepage">
+    <div class="nhsuk-header__logo"><a class="nhsuk-header__link nhsuk-header__link--service " href="/" aria-label="NHS data dictionary homepage">
         <svg class="nhsuk-logo" xmlns="http://www.w3.org/2000/svg" role="presentation" focusable="false" viewBox="0 0 40 16">
           <path class="nhsuk-logo__background" d="M0 0h40v16H0z"></path>
           <path class="nhsuk-logo__text" d="M3.9 1.5h4.4l2.6 9h.1l1.8-9h3.3l-2.8 13H9l-2.7-9h-.1l-1.8 9H1.1M17.3 1.5h3.6l-1 4.9h4L25 1.5h3.5l-2.7 13h-3.5l1.1-5.6h-4.1l-1.2 5.6h-3.4M37.7 4.4c-.7-.3-1.6-.6-2.9-.6-1.4 0-2.5.2-2.5 1.3 0 1.8 5.1 1.2 5.1 5.1 0 3.6-3.3 4.5-6.4 4.5-1.3 0-2.9-.3-4-.7l.8-2.7c.7.4 2.1.7 3.2.7s2.8-.2 2.8-1.5c0-2.1-5.1-1.3-5.1-5 0-3.4 2.9-4.4 5.8-4.4 1.6 0 3.1.2 4 .6"></path>
@@ -60,8 +60,12 @@
       </a>
     </div>
 
-<!--
     <div class="nhsuk-header__content" id="content-header">
+
+      <div class="nhsuk-header__menu">
+        <button class="nhsuk-header__menu-toggle" id="toggle-menu" aria-controls="header-navigation" aria-label="Open menu">Menu</button>
+      </div>
+
       <div class="nhsuk-header__search">
         <button class="nhsuk-header__search-toggle" id="toggle-search" aria-controls="search" aria-label="Open search">
           <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -72,7 +76,7 @@
         <div class="nhsuk-header__search-wrap" id="wrap-search">
           <form class="nhsuk-header__search-form" id="search" action="https://service-manual.nhs.uk/search/" method="get" role="search">
             <label class="nhsuk-u-visually-hidden" for="search-field">Search the NHS data dictionary website</label>
-            <div class="autocomplete-container" id="autocomplete-container"><div class="autocomplete__wrapper"><div style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"><div id="search-field__status--A" role="status" aria-atomic="true" aria-live="polite"></div><div id="search-field__status--B" role="status" aria-atomic="true" aria-live="polite"></div></div><ul class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden" id="search-field__listbox" role="listbox"></ul><span id="search-field__assistiveHint" style="display: none;">When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.</span></div><div class="autocomplete__wrapper"><div style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"><div id="search-field__status--A" role="status" aria-atomic="true" aria-live="polite">Type in 2 or more characters for results</div><div id="search-field__status--B" role="status" aria-atomic="true" aria-live="polite"></div></div><input aria-expanded="false" aria-owns="search-field__listbox" aria-autocomplete="list" autocomplete="off" class="autocomplete__input autocomplete__input--focused autocomplete__input--default" id="search-field" name="search-field" placeholder="Search" type="text" role="combobox" aria-describedby="search-field__assistiveHint"><ul class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden" id="search-field__listbox" role="listbox"></ul><span id="search-field__assistiveHint" style="display: none;">When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.</span></div></div>
+            <div class="autocomplete-container" id="autocomplete-container"><div class="autocomplete__wrapper"><div style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"><div id="search-field__status--A" role="status" aria-atomic="true" aria-live="polite"></div><div id="search-field__status--B" role="status" aria-atomic="true" aria-live="polite"></div></div><ul class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden" id="search-field__listbox" role="listbox"></ul><span id="search-field__assistiveHint" style="display: none;">When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.</span></div><div class="autocomplete__wrapper"><div style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin-bottom: -1px; margin-right: -1px; overflow: hidden; padding: 0px; position: absolute; white-space: nowrap; width: 1px;"><div id="search-field__status--A" role="status" aria-atomic="true" aria-live="polite"></div><div id="search-field__status--B" role="status" aria-atomic="true" aria-live="polite"></div></div><input aria-expanded="false" aria-owns="search-field__listbox" aria-autocomplete="list" autocomplete="off" class="autocomplete__input autocomplete__input--default" id="search-field" name="search-field" placeholder="Search" type="text" role="combobox" aria-describedby="search-field__assistiveHint" /><ul class="autocomplete__menu autocomplete__menu--inline autocomplete__menu--hidden" id="search-field__listbox" role="listbox"></ul><span id="search-field__assistiveHint" style="display: none;">When autocomplete results are available use up and down arrows to review and enter to select.  Touch device users, explore by touch or with swipe gestures.</span></div></div>
 
             <button class="nhsuk-search__submit" type="submit">
               <svg class="nhsuk-icon nhsuk-icon__search" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
@@ -90,8 +94,86 @@
         </div>
       </div>
     </div>
--->
   </div>
+
+  <nav class="nhsuk-header__navigation" id="header-navigation" role="navigation" aria-label="Primary navigation" aria-labelledby="label-navigation">
+    <div class="nhsuk-width-container">
+      <p class="nhsuk-header__navigation-title"><span id="label-navigation">Menu</span>
+        <button class="nhsuk-header__navigation-close" id="close-menu">
+          <svg class="nhsuk-icon nhsuk-icon__close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M13.41 12l5.3-5.29a1 1 0 1 0-1.42-1.42L12 10.59l-5.29-5.3a1 1 0 0 0-1.42 1.42l5.3 5.29-5.3 5.29a1 1 0 0 0 0 1.42 1 1 0 0 0 1.42 0l5.29-5.3 5.29 5.3a1 1 0 0 0 1.42 0 1 1 0 0 0 0-1.42z"></path>
+          </svg>
+          <span class="nhsuk-u-visually-hidden">Close menu</span>
+        </button>
+      </p>
+      <ul class="nhsuk-header__navigation-list">
+        <li class="nhsuk-header__navigation-item nhsuk-header__navigation-item--for-mobile">
+          <a class="nhsuk-header__navigation-link" href="/">
+            Home
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="/classes.html">
+            Classes
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item app-header__navigation-item__item--current">
+          <a class="nhsuk-header__navigation-link" href="/attributes.html">
+            Attributes
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="/elements.html">
+            Elements
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="/datasets.html">
+            DataSets
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="/busdefs.html">
+            Business definitions
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="/collections.html">
+            Collections
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+        <li class="nhsuk-header__navigation-item">
+          <a class="nhsuk-header__navigation-link" href="/all.html">
+            All items
+            <svg class="nhsuk-icon nhsuk-icon__chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15.5 12a1 1 0 0 1-.29.71l-5 5a1 1 0 0 1-1.42-1.42l4.3-4.29-4.3-4.29a1 1 0 0 1 1.42-1.42l5 5a1 1 0 0 1 .29.71z"></path>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </header>
         
         <!-- Search form -->
@@ -130,112 +212,6 @@
 
             <!-- This is the placeholder for the main page tiles. -->
             <div class="container-fluid wh_content_flex_container">
-                <!-- This is the placeholder for the main page tiles. -->
-                <div class=" wh_tiles "><div class=" wh_tile  " data-id="index">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="index.html" data-id="index">Home</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="classes">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="classes.html" data-id="classes">Classes</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="attributes">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="attributes.html" data-id="attributes">Attributes</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="elements">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="elements.html" data-id="elements">Elements</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="datasets">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="datasets.html" data-id="datasets">DataSets</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="busdefs">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="busdefs.html" data-id="busdefs">Business Definitions</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="collections">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="collections.html" data-id="collections">Collections</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div><div class=" wh_tile  " data-id="all">
-                        <div>
-                            
-                            
-
-                            <div class="wh_tile_text">
-                                
-                                <div class=" wh_tile_title "><span class="topicref"><a href="all.html" data-id="all">All Items Index</a></span></div>
-
-                                
-                                
-                            </div>
-                        </div>
-                    </div></div>
                 <!--
                     This is the placeholder for the main page entries
                     presented in a tree-like fashion.
