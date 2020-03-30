@@ -23,13 +23,16 @@
         
         <whc:include_html href="${webhelp.fragment.header}"/>
         
+        <nav class="nhsuk-breadcrumb" aria-label="breadcrumb">
+            <whc:webhelp_breadcrumb />
+        </nav>
+            
         <div class="nhsuk-width-container">
         <whc:webhelp_search_input/>
         
             <div class="row">
 
                 <nav class="wh_tools d-print-none navbar-expand-md">
-                    <whc:webhelp_breadcrumb/>
 
                     <div class="wh_right_tools">
                         <whc:webhelp_toggle_highlight/>
