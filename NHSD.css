@@ -8439,3 +8439,77 @@ Example:
  * Tree TOC for the main page.
  * 
  */
+/* Beta badge style */
+.nhsuk-tag {
+  font-weight: 600;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1;
+  background-color: #005eb8;
+  color: #fff;
+  display: inline-block;
+  letter-spacing: 1px;
+  outline: 2px solid transparent;
+  outline-offset: -2px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+@media (min-width: 40.0625em) {
+  .nhsuk-tag {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1;
+  }
+}
+@media print {
+  .nhsuk-tag {
+    font-size: 14pt;
+    line-height: 1;
+  }
+}
+.nhsuk-tag--dark-grey {
+  background-color: #4c6272;
+}
+
+.app-beta__container {
+  border-bottom: 1px solid #d8dde0;
+  padding: 8px 0;
+}
+
+.app-beta__content {
+  display: table;
+  margin-bottom: 0;
+}
+
+.app-beta__content .app-beta__tag {
+  display: block;
+  margin-right: 8px;
+}
+
+.app-beta__text {
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  display: table-cell;
+  vertical-align: baseline;
+}
+
+@media (min-width: 40.0625em) {
+  .app-beta__text {
+    font-size: 16px;
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+}
+@media print {
+  .app-beta__text {
+    font-size: 14pt;
+    line-height: 1.2;
+  }
+}
